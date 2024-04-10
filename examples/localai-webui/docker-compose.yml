@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8080:8080
+      - 8090:8080
     volumes:
       - ./models:/models:cached
     command: ["/usr/bin/local-ai"]
@@ -15,4 +15,4 @@ services:
   frontend:
     image: quay.io/go-skynet/localai-frontend:master
     ports:
-      - 3000:3000
+      - 3011:3000
