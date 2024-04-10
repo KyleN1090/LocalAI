@@ -17,5 +17,6 @@ services:
 
   frontend:
     image: quay.io/go-skynet/localai-frontend:master
+    container_name: Localai85-FE
     ports:
       - 3010:3000
