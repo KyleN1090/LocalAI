@@ -3,6 +3,7 @@ version: '3.6'
 services:
   api:
     image: quay.io/go-skynet/local-ai:latest
+    container_name: HUG_LOCALAI
     build:
       context: ../../
       dockerfile: Dockerfile
